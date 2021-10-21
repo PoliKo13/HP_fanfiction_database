@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %} Поиск {% endblock %}
+
+{% block content %}
+	<div><h5>Введите запрос в соответствии с правилами поиска</h5>
+		<div><form action="/results" method="GET">
+			<input type="text" name="searchlink" size="60">
+			<input class="submit" type="submit" name="submit" value="Искать" size="20">      
+			</form>
+		</div>
+	</div>
+
+{% endblock %}
